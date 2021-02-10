@@ -55,7 +55,7 @@ else
                 echo $lastline > tmp2.txt
             else
                 echo "Errors are found in oacore logs!!" > $LOG
-                mailx -s "Following errors are found in oacore log in $TWO_TASK EBS(DMZ). Please check if EBS is working fine. Check oacore.log for more information!!" "iseal@kbace.com,PPinyochon@suffolk.com" < tmp1.txt
+                mailx -s "Following errors are found in oacore log in $TWO_TASK EBS(DMZ). Please check if EBS is working fine. Check oacore.log for more information!!" "emailaddress@domain.com" < tmp1.txt
                 rm tmp1.txt
                 lastline=$currentline ### Set lastline to currentline and store its value to a temp file for retreival in next iteration ###
                 rm tmp2.txt
